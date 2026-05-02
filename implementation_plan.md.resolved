@@ -1,0 +1,86 @@
+# DhanSaathi — AI Investment Advisor for Bharat
+
+## Product Vision
+
+**DhanSaathi** (धनसाथी — "Wealth Companion") is an AI-native conversational investment advisor designed for 100M+ Indians who have UPI but don't invest. It bridges the gap between India's payment infrastructure and the missing investment intelligence layer.
+
+### Core Insight
+> India solved **payments** (UPI: 500M+ users) but NOT **investing** (only 5.9 crore MF investors out of 140 crore population). The gap isn't access — it's **guidance, trust, and simplicity**. DhanSaathi fills this gap with an AI advisor that speaks your language, understands your life stage, and makes investing as easy as sending a UPI payment.
+
+---
+
+## What We're Building
+
+A **fully functional web prototype** — a mobile-first conversational AI investment advisor with:
+
+1. **Onboarding Flow** — Quick 3-question profiling (income, goal, risk)
+2. **AI Chat Interface** — WhatsApp-style conversational advisor with quick-reply buttons
+3. **Smart Portfolio Generator** — Personalized investment plan based on user profile
+4. **Visual Dashboard** — Interactive charts showing projected returns, allocation breakdown
+5. **Investment Simulator** — "What-if" scenario testing
+6. **Regional Language Support** — Hindi/English toggle (India-first)
+
+---
+
+## Technical Plan
+
+### Stack
+- **Vite + Vanilla JS** — Fast, lightweight, no framework overhead
+- **Vanilla CSS** — Custom design system with glassmorphism, gradients, dark mode
+- **Chart.js** — For portfolio visualization and projections
+- **No backend needed** — All AI responses are pre-scripted for the prototype (realistic conversation flows)
+
+### File Structure
+```
+/Users/nitinnayan/Desktop/zupee/dhansaathi/
+├── index.html          # Entry point
+├── style.css           # Complete design system + all styles
+├── app.js              # Main application logic
+├── chat.js             # Chat engine with conversation flows
+├── portfolio.js        # Portfolio generation & calculation logic
+├── charts.js           # Chart rendering (Chart.js)
+└── assets/
+    └── (generated images)
+```
+
+### Key Screens
+1. **Splash/Landing** — Animated intro with product value prop
+2. **Onboarding** — 3-step goal-setting wizard (swipeable cards)
+3. **Chat** — Main AI advisor interface with quick replies
+4. **Dashboard** — Portfolio overview with charts
+5. **Simulator** — What-if scenario slider
+
+---
+
+## Market Data (for the pitch deck built into the app)
+
+| Metric | Value |
+|---|---|
+| Demat accounts | 22.5 crore (March 2026) |
+| Active investors | ~⅓ of total accounts |
+| Unique MF investors | 5.9 crore |
+| Monthly SIP inflows | ₹32,087 crore (March 2026) |
+| MF AUM | ₹81.01 lakh crore |
+| UPI users | 350-500 million |
+| Smartphone users | ~1 billion |
+| MF penetration | ~4.2% of population |
+| Rural saving intent | 96% want to invest |
+
+### TAM Calculation
+- **Total:** 500M UPI users who can transact digitally
+- **SAM:** 100M users in Tier 2/3 cities with income but no investment guidance  
+- **SOM (Year 1):** 5M users through viral referral + WhatsApp sharing
+
+---
+
+## Verification Plan
+
+### Automated
+- App loads and all screens render correctly
+- Chat flow completes end-to-end
+- Charts render with realistic data
+- Responsive on mobile viewports
+
+### Manual
+- Visual review of all screens in browser
+- Interaction flow testing
