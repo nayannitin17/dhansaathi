@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dhansaathi-v1';
+const CACHE_NAME = 'dhansaathi-v2';
 const ASSETS = [
   '/',
   '/index.html',
@@ -9,9 +9,7 @@ const ASSETS = [
   '/charts.js',
   '/manifest.json',
   '/assets/icon-192.png',
-  '/assets/icon-512.png',
-  'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap',
-  'https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js'
+  '/assets/icon-512.png'
 ];
 
 self.addEventListener('install', e => {
@@ -28,6 +26,10 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
   e.respondWith(
-    caches.match(e.request).then(cached => cached || fetch(e.request))
+    fetch(e.request).then(response => {
+      const clone = response.clone();
+      caches.open(CACHE_NAME).then(cache => cache.put(e.request, clone));
+      return response;
+    }).catch(() => caches.match(e.request))
   );
 });
