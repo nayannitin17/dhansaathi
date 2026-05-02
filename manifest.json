@@ -1,8 +1,7 @@
-{
-  "name": "DhanSaathi - AI Investment Advisor",
+{"name":"DhanSaathi","start_url":"/dhansaathi/","display":"standalone","icons":[{"src":"assets/icon-512.jpeg","sizes":"512x512","type":"image/jpeg"}]}name":"DhanSaathi","short_name":"DhanSaathi","start_url":"/dhansaathi/","display":"standalone","icons":[{"src":"assets/icon-48.jpeg","sizes":"48x48","type":"image/jpeg"},{"src":"assets/icon-512.jpeg","sizes":"512x512","type":"image/jpeg"}]}{  "name": "DhanSaathi - AI Investment Advisor",
   "short_name": "DhanSaathi",
   "description": "Your AI-powered investment companion. Smart, simple investing for every Indian.",
-  "start_url": "/",
+  "start_url": "/dhansaathi.png  .jpeg",
   "display": "standalone",
   "background_color": "#0a0e1a",
   "theme_color": "#00E5A0",
